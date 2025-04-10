@@ -21,11 +21,7 @@
           "xpath": "//Project/PropertyGroup/Version"
         }
       ]
-    },
-    "NetCord.Services": {},
-    "Hosting/NetCord.Hosting": {},
-    "Hosting/NetCord.Hosting.Services": {},
-    "Hosting/NetCord.Hosting.AspNetCore": {}
+    }
   },
   "plugins": [
     "sentence-case"
