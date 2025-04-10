@@ -13,7 +13,7 @@
     <PackageTags>bot;discord;discord-api</PackageTags>
     <PackageIcon>SmallSquare.png</PackageIcon>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
-    <Version>$(VersionPrefix)</Version>
+    <Version>1.0.0</Version>
     <VersionSuffix>alpha.359</VersionSuffix>
     <Description>The modern and fully customizable C# Discord library.</Description>
     <PackageReadmeFile>README.md</PackageReadmeFile>
@@ -23,15 +23,15 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Include="..\Resources\NuGet\README.md" Pack="true" PackagePath="" />
-    <None Include="..\Resources\Logo\png\SmallSquare.png" Pack="true" PackagePath="" />
+    <None Include="..\Resources\NuGet\README.md" Pack="true" PackagePath=""/>
+    <None Include="..\Resources\Logo\png\SmallSquare.png" Pack="true" PackagePath=""/>
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\SourceGenerators\MethodsForPropertiesGenerator\MethodsForPropertiesGenerator.csproj" ReferenceOutputAssembly="false" OutputItemType="Analyzer" />
-    <ProjectReference Include="..\SourceGenerators\UserAgentHeaderGenerator\UserAgentHeaderGenerator.csproj" ReferenceOutputAssembly="false" OutputItemType="Analyzer" />
-    <ProjectReference Include="..\SourceGenerators\RestClientMethodAliasesGenerator\RestClientMethodAliasesGenerator.csproj" ReferenceOutputAssembly="false" OutputItemType="Analyzer" />
-    <ProjectReference Include="..\SourceGenerators\Shared\Shared.csproj" ReferenceOutputAssembly="false" OutputItemType="Analyzer" />
+    <ProjectReference Include="..\SourceGenerators\MethodsForPropertiesGenerator\MethodsForPropertiesGenerator.csproj" ReferenceOutputAssembly="false" OutputItemType="Analyzer"/>
+    <ProjectReference Include="..\SourceGenerators\UserAgentHeaderGenerator\UserAgentHeaderGenerator.csproj" ReferenceOutputAssembly="false" OutputItemType="Analyzer"/>
+    <ProjectReference Include="..\SourceGenerators\RestClientMethodAliasesGenerator\RestClientMethodAliasesGenerator.csproj" ReferenceOutputAssembly="false" OutputItemType="Analyzer"/>
+    <ProjectReference Include="..\SourceGenerators\Shared\Shared.csproj" ReferenceOutputAssembly="false" OutputItemType="Analyzer"/>
   </ItemGroup>
 
 </Project>
