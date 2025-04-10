@@ -1,0 +1,80 @@
+{
+  "$schema": "https://raw.githubusercontent.com/googleapis/release-please/main/schemas/config.json",
+  "pull-request-title-pattern": "chore(${component}): ${version}",
+  "group-pull-request-title-pattern": "chore(ci): Release `${branch}`",
+  "separate-pull-requests": false,
+  "prerelease": false,
+  "draft-pull-request": true,
+  "pull-request-header": "👇 Changelog 👇",
+  "include-v-in-tag": false,
+  "packages": {
+    "NetCord": {
+      "component": "NetCord",
+      "changelog-path": "CHANGELOG.md",
+      "release-type": "simple",
+      "bump-minor-pre-major": false,
+      "bump-patch-for-minor-pre-major": false,
+      "extra-files": [
+        {
+          "type": "xml",
+          "path": "/NetCord/NetCord.csproj",
+          "xpath": "//Project/PropertyGroup/Version"
+        }
+      ]
+    },
+    "NetCord.Services": {},
+    "Hosting/NetCord.Hosting": {},
+    "Hosting/NetCord.Hosting.Services": {},
+    "Hosting/NetCord.Hosting.AspNetCore": {}
+  },
+  "plugins": [
+    "sentence-case"
+  ],
+  "changelog-sections": [
+    {
+      "type": "feat",
+      "section": "🚀 Features & Enhancements",
+      "hidden": false
+    },
+    {
+      "type": "fix",
+      "section": "🐛 Bug Fixes",
+      "hidden": false
+    },
+    {
+      "type": "ci",
+      "section": "🤖 CI/CD",
+      "hidden": false
+    },
+    {
+      "type": "chore",
+      "section": "🏡 Chore",
+      "hidden": false
+    },
+    {
+      "type": "docs",
+      "section": "📑 Documentation",
+      "hidden": false
+    },
+    {
+      "type": "test",
+      "section": "🧪 Tests",
+      "hidden": false
+    },
+    {
+      "type": "style",
+      "section": "🎨 Style",
+      "hidden": false
+    },
+    {
+      "type": "refactor",
+      "section": "💅 Refactors",
+      "hidden": false
+    },
+    {
+      "type": "perf",
+      "section": "🔥 Performance",
+      "hidden": false
+    }
+  ]
+}
